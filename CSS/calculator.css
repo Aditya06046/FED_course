@@ -1,23 +1,23 @@
-*{
-    margin: 0%;
+.cal{
+    width: 240px;
+    height: 356px;
+    border: 2px solid black;
+    position: absolute;
+
+}
+#space_1,#space_2{
+    width:238px;
+    height: 40px;
+    border:none;
     padding: 0%;
+    text-size-adjust:10px;
+
 }
-.calulater{
-    width: 400px;
-    height: 300px;
-    background-color:rgb(115, 239, 175);
-    margin-top: 200px;
-    margin-left: 500px;
-}
-.labels{
-    width: 300px;
-    height: 60px;
-}
-.buttons{
-   width: 300px;
-    height: 200px;
-}
-#nine{
+#r11 ,#r12, #r13, #r14,#r21 ,#r22, #r23, #r24,#r31 ,#r32, #r33, #r34,
+#r41 ,#r42, #r43, #r44,#r51 ,#r52, #r53, #r54{
     width: 50px;
     height: 50px;
+    margin-left: 5px;
+    
 }
+
