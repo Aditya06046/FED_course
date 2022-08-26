@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script>
+        var operator='';
+        function but_r11(){
+            let x=document.getElementById("r11").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r12(){
+            let x=document.getElementById("r12").innerHTML;
+            document.getElementById("space_1").value=null;
+            document.getElementById("space_2").value=null;
+            
+        }
+        function but_r13(){
+            let x=document.getElementById("r13").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r14(){
+            let y=document.getElementById("space_2").value;
+            document.getElementById("space_2").value=y.slice(0,(y.length)-1);
+            
+        }
+        function but_r21(){
+            let x=document.getElementById("r21").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r22(){
+            let x=document.getElementById("r22").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r23(){
+            let x=document.getElementById("r23").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r24(){
+            let x=document.getElementById("r24").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            operator='+'
+            
+        }
+        function but_r31(){
+            let x=document.getElementById("r31").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r32(){
+            let x=document.getElementById("r32").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r33(){
+            let x=document.getElementById("r33").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r34(){
+            let x=document.getElementById("r34").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            operator='-'
+            
+        }
+        function but_r41(){
+            let x=document.getElementById("r41").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r42(){
+            let x=document.getElementById("r42").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r43(){
+            let x=document.getElementById("r43").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r44(){
+            let x=document.getElementById("r44").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            operator='*'
+        }
+        function but_r51(){
+            let x=document.getElementById("r51").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r52(){
+            let x=document.getElementById("r52").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            
+        }
+        function but_r53(){
+            let x=document.getElementById("space_2").value;
+            if (operator=='+'){
+                let y,sum;
+                y=x.split('+')
+                sum=parseInt(y[0])+parseInt(y[1]);
+                document.getElementById("space_1").value=sum;
+            }
+            if (operator=='-'){
+                let y,sum;
+                y=x.split('-')
+                sum=parseInt(y[0])-parseInt(y[1]);
+                document.getElementById("space_1").value=sum;
+            }
+            if (operator=='*'){
+                let y,sum;
+                y=x.split('*')
+                sum=parseInt(y[0])*parseInt(y[1]);
+                document.getElementById("space_1").value=sum;
+            }
+            if (operator=='/'){
+                let y,sum;
+                y=x.split('/')
+                sum=parseInt(y[0])/parseInt(y[1]);
+                document.getElementById("space_1").value=sum;
+            }
+        
+
+            
+            
+        }
+        function but_r54(){
+            let x=document.getElementById("r54").innerHTML;
+            document.getElementById("space_2").value=document.
+            getElementById("space_2").value+x;
+            operator='/'
+            
+        }
+    </script>
+</head>
+<body>
+    
+    <center><h1>Demo calculator</h1></center>
+    <div class="cal">
+        <table>
+            <tr><input type="text" name="text"  id="space_1"></tr>
+            <tr><input type="text" name="text"  id="space_2"></tr>
+           <tr>
+                <td ><button id="r11" onclick="but_r11()">(</button></td>
+                <td ><button id="r12" onclick="but_r12()">CE</button></td>
+                <td ><button id="r13" onclick="but_r13()">)</button></td>
+                <td ><button id="r14" onclick="but_r14()">C</button></td>
+            </tr>
+            <tr>
+                <td ><button id="r21" onclick="but_r21()">9</button></td>
+                <td ><button id="r22" onclick="but_r22()">8</button></td>
+                <td ><button id="r23" onclick="but_r23()">7</button></td>
+                <td ><button id="r24" onclick="but_r24()">+</button></td>
+            </tr>
+            <tr>
+                <td ><button id="r31" onclick="but_r31()">6</button></td>
+                <td ><button id="r32" onclick="but_r32()">5</button></td>
+                <td ><button id="r33" onclick="but_r33()">4</button></td>
+                <td ><button id="r34" onclick="but_r34()">-</button></td>
+            </tr>
+            <tr>
+                <td ><button id="r41" onclick="but_r41()">3</button></td>
+                <td ><button id="r42" onclick="but_r42()">2</button></td>
+                <td ><button id="r43" onclick="but_r43()">1</button></td>
+                <td ><button id="r44" onclick="but_r44()">*</button></td>
+            </tr>
+            <tr>
+                <td ><button id="r51" onclick="but_r51()">.</button></td>
+                <td ><button id="r52" onclick="but_r52()">0</button></td>
+                <td ><button id="r53" onclick="but_r53()">=</button></td>
+                <td ><button id="r54" onclick="but_r54()">/</button></td>
+            </tr>
+            
+        </table>
+    </div>
+
+</body>
+</html>
