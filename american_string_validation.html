@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    function cardnumber(txt)
+    {
+        var letterNumber = /^(?:3[47][0-9]{13})$/;
+        if((txt.match(letterNumber))) 
+        {
+            return true;
+        }
+        else
+        {
+            alert("Not a valid Amercican Express credit card number!");
+            return false;
+        }
+    }
+    document.write(cardnumber("2384092384752"));
+    </script>
+</body>
+</html>
