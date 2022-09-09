@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">value of string</p>
+    <script>
+        function alphanumeric(txt)
+        {
+            var letterNumber = /^[0-9a-zA-Z]+$/;
+            if((txt.value.match(letterNumber))) 
+             {
+                document.write("ture value");
+             }
+            else
+            { 
+                alert("message"); 
+                document.write("false"); 
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
